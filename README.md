@@ -56,6 +56,7 @@ sed -i -e "s/flagProjectTarget/${PWD##*/}/g" ./Podfile
 ```objc
 NSString *bootstrapUrl = @"http://[URL]/_ios_/start_ios.json";
 ```
+> **bootstrapUrl** : start_ios.json 파일 웹서버 파일 경로
 
 # Nexqacro Studio 에서 iOS용 모바일 파일 생성
 - `Deploy` &rarr; `Packing` 선택

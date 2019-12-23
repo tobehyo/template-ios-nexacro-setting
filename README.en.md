@@ -54,6 +54,7 @@ For example,
 ```objc
 NSString *bootstrapUrl = @"http://[URL]/_ios_/start_ios.json";
 ```
+> **bootstrapUrl** : start_ios.json file path on web server
 
 # Packing iOS mobile files in Nexacro Studio
 - Select `Deploy` &rarr; `Packing`
