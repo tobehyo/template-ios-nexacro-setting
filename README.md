@@ -43,33 +43,16 @@ sed -i -e "s/flagProjectTarget/${PWD##*/}/g" ./Podfile
 
 ### 4. 압축해제 및 nexacro17.framework 복사
 1. 압축해제: `nexacro17_iOS_xxxxxxxx_x.zip`
-2. 복사 : `nexacro17.framework` 를 `../../nexacro17framework` 폴더로 복사
-
-### 5. podfile 생성
-cd {PROJECT_LOCATION} then init pod  
-예: 
-```bash
-cd ~/Documents/HelloNexacro
-pod init
-```
-### 6. podfile 에 list 추가
-> pod 'nexacro17framework', :path => '../nexacro17framework'
+2. 복사 : `nexacro17.framework` 를 `{프로젝트를 저장한 폴더}/nexacro17framework` 폴더로 복사
 
 예:
+> ~/Documents/nexacro17framework/
 
-```ruby
-target 'emptyP' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-  pod 'nexacro17framework', :path => '../nexacro17framework'
-end
-```
-
-### 7. Pod Install
+### 5. Pod Install
 ```bash
 ~/Documents/HelloNexacro $ pod install
 ```
-### 8. AppDelegate.m 파일에서 bootstrapUrl 설정
+### 6. AppDelegate.m 파일에서 bootstrapUrl 설정
 ```objc
 NSString *bootstrapUrl = @"http://[URL]/_ios_/start_ios.json";
 ```

@@ -41,33 +41,16 @@ sed -i -e "s/flagProjectTarget/${PWD##*/}/g" ./Podfile
 
 ### 4. Unzip, Copy nexacro17.framework 
 1. UnZip : `nexacro17_iOS_xxxxxxxx_x.zip`
-2. Copy and Paste : `nexacro17.framework` to `../../nexacro17framework`
+2. Copy and Paste : `nexacro17.framework` to `{save location for project}/nexacro17framework` folder  
 
-### 5. Create podfile
-cd {PROJECT_LOCATION} then init pod  
-For example,
-```bash
-cd ~/Documents/HelloNexacro
-pod init
-```
-### 6. Open podfile and add list
-> pod 'nexacro17framework', :path => '../nexacro17framework'
+For example,  
+> ~/Documents/nexacro17framework/
 
-For example,
-
-```ruby
-target 'emptyP' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-  pod 'nexacro17framework', :path => '../nexacro17framework'
-end
-```
-
-### 7. Pod Install
+### 5. Pod Install
 ```bash
 ~/Documents/HelloNexacro $ pod install
 ```
-### 8. set bootstrapUrl in AppDelegate.m
+### 6. set bootstrapUrl in AppDelegate.m
 ```objc
 NSString *bootstrapUrl = @"http://[URL]/_ios_/start_ios.json";
 ```
