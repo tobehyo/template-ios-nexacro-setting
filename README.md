@@ -3,7 +3,7 @@
 ## Nexacro 17 mobile app 빌드를 위한 파일 준비
 - iOS용 넥사크로 라이브러리 파일 (nexacro17_iOS_xxxxxxxx_x.zip)
  *"nexacro17_iOS_xxxxxxxx_x.zip" 파일은 [파일은 투비소프트 기술지원 홈페이지](http://support.tobesoft.co.kr)에서 다운로드 받을 수 있습니다*  
- Downloads &rarr; Nexacro Platform 17 &rarr; nexacro17_AndroidX_[{date}_{realeasenumber}].zip  
+ Downloads &rarr; Nexacro Platform 17 &rarr; nexacro17_iOX_[{date}_{realeasenumber}].zip  
  
 ## Xcode 프로젝트 생성 및 설정
 ### 1. 프로젝트 생성
