@@ -33,15 +33,17 @@ mv AppDelegate.h AppDelegate.h_org &&
 mv AppDelegate.m AppDelegate.m_org &&
 mv ViewController.h ViewController.h_org &&
 mv ViewController.m ViewController.m_org &&
-curl -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/AppDelegate.h -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/AppDelegate.m -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/ViewController.h -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/ViewController.m && 
+curl -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/AppDelegate.h -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/AppDelegate.m -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/ViewController.h -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/ViewController.m &&  
 (cd en.lproj && 
-curl -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/en.lproj/Localizable.strings) &&
-(cd ../../nexacro17framework && curl -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/nexacro17framework.podspec) 
+curl -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/en.lproj/Localizable.strings) && 
+(cd ../../nexacro17framework && curl -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/nexacro17framework.podspec) && 
+cd .. && curl -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/Podfile &&  
+sed -i -e "s/flagProjectTarget/${PWD##*/}/g" ./Podfile 
 ```
 
-### 4. 압축해제 및 nexacro17.framework.zip 파일 복사
+### 4. 압축해제 및 nexacro17.framework 복사
 1. 압축해제: `nexacro17_iOS_xxxxxxxx_x.zip`
-2. 복사 : `nexacro17.framework.zip` 파일을 `../../nexacro17framework` 폴더로
+2. 복사 : `nexacro17.framework` 를 `../../nexacro17framework` 폴더로 복사
 
 ### 5. podfile 생성
 cd {PROJECT_LOCATION} then init pod  

@@ -22,7 +22,7 @@ cd ~/Documents/HelloNexacro/HelloNexacro
 > When you created project, it assume "Product Name" is "HelloNexacro"  
 > Chose location path is "~/Documents"
 
-### 3. paste command on terminal
+### 3. Copy and Paste command on terminal
 
 ```bash
 mkdir -p ../../nexacro17framework &&
@@ -31,15 +31,17 @@ mv AppDelegate.h AppDelegate.h_org &&
 mv AppDelegate.m AppDelegate.m_org &&
 mv ViewController.h ViewController.h_org &&
 mv ViewController.m ViewController.m_org &&
-curl -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/AppDelegate.h -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/AppDelegate.m -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/ViewController.h -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/ViewController.m && 
+curl -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/AppDelegate.h -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/AppDelegate.m -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/ViewController.h -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/ViewController.m &&  
 (cd en.lproj && 
-curl -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/en.lproj/Localizable.strings) &&
-(cd ../../nexacro17framework && curl -O https://github.com/tobehyo/template-ios-nexacro-setting/blob/master/nexacro17framework.podspec) 
+curl -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/en.lproj/Localizable.strings) && 
+(cd ../../nexacro17framework && curl -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/nexacro17framework.podspec) && 
+cd .. && curl -O https://raw.githubusercontent.com/tobehyo/template-ios-nexacro-setting/master/Podfile &&  
+sed -i -e "s/flagProjectTarget/${PWD##*/}/g" ./Podfile
 ```
 
-### 4. Unzip, Copy nexacro17.framework.zip
+### 4. Unzip, Copy nexacro17.framework 
 1. UnZip : `nexacro17_iOS_xxxxxxxx_x.zip`
-2. Copy and Paste : `nexacro17.framework.zip` to `../../nexacro17framework`
+2. Copy and Paste : `nexacro17.framework` to `../../nexacro17framework`
 
 ### 5. Create podfile
 cd {PROJECT_LOCATION} then init pod  
