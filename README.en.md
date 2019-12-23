@@ -41,7 +41,7 @@ sed -i -e "s/flagProjectTarget/${PWD##*/}/g" ./Podfile
 
 ### 4. Unzip, Copy nexacro17.framework 
 1. UnZip : `nexacro17_iOS_xxxxxxxx_x.zip`
-2. Copy and Paste : `nexacro17.framework` to `{save location for project}/nexacro17framework` folder  
+2. Copy and Paste : `nexacro17.framework` to `{PROJECT_LOCATION}/nexacro17framework` folder  
 
 For example,  
 > ~/Documents/nexacro17framework/

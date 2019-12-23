@@ -43,7 +43,7 @@ sed -i -e "s/flagProjectTarget/${PWD##*/}/g" ./Podfile
 
 ### 4. 압축해제 및 nexacro17.framework 복사
 1. 압축해제: `nexacro17_iOS_xxxxxxxx_x.zip`
-2. 복사 : `nexacro17.framework` 를 `{프로젝트를 저장한 폴더}/nexacro17framework` 폴더로 복사
+2. 복사 : `nexacro17.framework` 를 `{PROJECT_LOCATION}/nexacro17framework` 폴더로 복사
 
 예:
 > ~/Documents/nexacro17framework/
