@@ -10,7 +10,7 @@
 > 1. File &rarr; New &rarr; Project
 > 2. "Single View App" 선택
 > 3. "Objective-C" 언어 선택
-> 4. 위치 선택 후 클릭 "Create" 버튼
+> 4. 위치 선택 후 "Create" 버튼 클릭
 
 ### 2. 터미널에서 폴더 열기
 ```
