@@ -27,8 +27,8 @@ cd ~/Documents/HelloNexacro/HelloNexacro
 ### 3. 터미널에 명령어 입력
 
 ```bash
-mkdir ../../nexacro17framework &&
-mkdir en.lproj &&
+mkdir -p ../../nexacro17framework &&
+mkdir -p en.lproj &&
 mv AppDelegate.h AppDelegate.h_org && 
 mv AppDelegate.m AppDelegate.m_org &&
 mv ViewController.h ViewController.h_org &&
