@@ -58,7 +58,7 @@ NSString *bootstrapUrl = @"http://[URL]/_ios_/start_ios.json";
 ```
 > **bootstrapUrl** : start_ios.json 파일 웹서버 파일 경로
 
-# Nexqacro Studio 에서 iOS용 모바일 파일 생성
+# Nexacro Studio 에서 iOS용 모바일 파일 생성
 - `Deploy` &rarr; `Packing` 선택
 - `Output Path` 설정 후 "Next" 클릭
 - `iOS/iPadOS` 및 `Update(Local+Server)` 선택 후 "Packing" 버튼 클릭
