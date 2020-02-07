@@ -18,7 +18,7 @@
 @implementation AppDelegate
 - (NexacroMainViewController*)initializeMainViewController
 {
-    NSString *bootstrapUrl = @"http://jct.tobesoft.co.jp/overseas/deploy/nexacrohello/_ios_/start_ios.json";
+    NSString *bootstrapUrl = @"http://[URL]/start_ios.json";
     
     [[NexacroResourceManager sharedResourceManager] setBootstrapURL:bootstrapUrl isDirect:NO];
     AppViewController* controller = [[AppViewController alloc] initWithFullScreen:NO];
