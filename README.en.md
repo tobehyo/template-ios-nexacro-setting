@@ -19,8 +19,8 @@ For instance :
 cd ~/Documents/HelloNexacro/HelloNexacro
 ```
 
-> When you created project, it assume "Product Name" is "HelloNexacro"  
-> Chose location path is "~/Documents"
+> When you created project, it assumes "Product Name" is "HelloNexacro" 
+> and save location path is "~/Documents"
 
 ### 3. Copy and Paste command on terminal
 
